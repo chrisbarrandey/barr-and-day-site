@@ -1,0 +1,53 @@
+/*
+  Barr & Day Coffee Co. — Design tokens
+  Fuente de verdad para color, tipografía y movimiento.
+  Ningún componente debe usar valores hardcodeados fuera de este archivo.
+*/
+
+:root {
+  /* ---------- Color ---------- */
+  --color-navy: #101B45;
+  --color-navy-deep: #0B1333;
+  --color-ink: #FFFFFF;
+  --color-paper: #F4F1E9;
+  --color-sky: #8FB6E0;
+  --color-gold: #C9A24B;
+  --color-line: rgba(255, 255, 255, 0.22);
+  --color-line-soft: rgba(255, 255, 255, 0.12);
+
+  --color-open: #6FBF73;
+  --color-closed: #E0A15C;
+
+  /* ---------- Tipografía ---------- */
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Inter', sans-serif;
+
+  --fs-h1: clamp(32px, 6vw, 56px);
+  --fs-h2: clamp(24px, 4vw, 34px);
+  --fs-body: 16px;
+  --fs-small: 13px;
+
+  /* ---------- Espaciado ---------- */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+
+  /* ---------- Movimiento ---------- */
+  --dur-tap: 0ms;
+  --dur-micro: 120ms;
+  --dur-element: 220ms;
+  --dur-confirm: 700ms;
+
+  --ease-standard: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
