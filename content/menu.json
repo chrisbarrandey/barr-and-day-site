@@ -1,0 +1,28 @@
+{
+  "coffee": [
+    { "name": "Espresso", "price": "$3.00", "anchor": true },
+    { "name": "Americano", "price": "$3.50" },
+    { "name": "Cold Brew", "price": "$5.25" },
+    { "name": "Cold Brew Tonic", "price": "$5.75" }
+  ],
+  "lattesAndMore": [
+    { "name": "Latte", "price": "$5.25" },
+    { "name": "Vanilla Latte", "price": "$5.75" },
+    { "name": "Caramel Latte", "price": "$5.75" },
+    { "name": "Spanish Latte", "price": "$5.75" },
+    { "name": "Mazapan Latte", "price": "$5.75" },
+    { "name": "Coconut Latte", "price": "$5.75" },
+    { "name": "Iced Matcha Latte", "price": "$5.75" },
+    { "name": "Iced Matcha Strawberry", "price": "$5.75" }
+  ],
+  "chocolate": [
+    { "name": "Hot Chocolate", "price": "$4.00" },
+    { "name": "Mocha", "price": "$5.25" }
+  ],
+  "extras": [
+    { "name": "Oat Milk", "price": "+$0.75" },
+    { "name": "Almond Milk", "price": "+$0.75" },
+    { "name": "Coconut Milk", "price": "+$0.75" },
+    { "name": "Extra Espresso Shot", "price": "+$1.00" }
+  ]
+}
