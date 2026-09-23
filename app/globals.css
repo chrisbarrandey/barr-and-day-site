@@ -251,3 +251,56 @@ button {
 .menu .price--anchor {
   color: #8c6220; /* dorado oscurecido para buen contraste sobre --color-paper */
 }
+
+/* ---------- Location ---------- */
+.location {
+  background: var(--color-navy-deep);
+  color: var(--color-ink);
+  padding: var(--space-5) var(--space-3);
+}
+.location__inner {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.location__title {
+  font-family: var(--font-display);
+  font-size: var(--fs-h2);
+  font-weight: 500;
+  margin: 0 0 var(--space-2);
+}
+.location__address {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.9);
+  margin: var(--space-3) 0 var(--space-4);
+}
+.location__ref {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.location__hours {
+  border-top: 1px solid var(--color-line-soft);
+  margin-bottom: var(--space-4);
+}
+.location__hours-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-line-soft);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+}
+.location__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+.location__phone {
+  font-family: var(--font-body);
+  color: var(--color-sky);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
