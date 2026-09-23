@@ -1,0 +1,13 @@
+{
+  "address": "13671 Eastlake Blvd, Horizon City, TX 79928",
+  "reference": "Corner of Darrington Rd & Eastlake — curbside",
+  "phone": "(915) 977-2655",
+  "phoneHref": "+19159772655",
+  "hours": [
+    { "day": "Thursday", "time": "8:00 AM – 2:00 PM" },
+    { "day": "Friday", "time": "8:00 AM – 2:00 PM" },
+    { "day": "Saturday", "time": "9:00 AM – 1:00 PM" },
+    { "day": "Sunday", "time": "9:00 AM – 1:00 PM" },
+    { "day": "Monday – Wednesday", "time": "Closed" }
+  ]
+}
