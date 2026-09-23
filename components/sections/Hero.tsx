@@ -1,35 +1,41 @@
-import { Button } from "../ui/Button";
 import { Price } from "../ui/Price";
 
 type HeroProps = {
   isOpenNow: boolean;
   opensAt?: string;
+  opensLabel?: string;
   locationLabel: string;
 };
 
-export function Hero({ isOpenNow, opensAt, locationLabel }: HeroProps) {
+export function Hero({ isOpenNow, opensAt, opensLabel, locationLabel }: HeroProps) {
   return (
     <section className="hero">
       <div className="hero__content">
         <span className={`badge ${isOpenNow ? "badge--open" : "badge--closed"}`}>
-          {isOpenNow ? "Abierto ahora" : `Cerrado · Abrimos a las ${opensAt}`}
-          {" "}en {locationLabel}
+          {isOpenNow
+            ? "Open now"
+            : `Closed · Opens ${opensLabel ? opensLabel + " " : ""}at ${opensAt}`}
+          {" "}in {locationLabel}
         </span>
 
         <h1 className="hero__title">
-          Café de verdad,
+          Real coffee,
           <br />
-          al precio de todos los días.
+          at an everyday price.
         </h1>
 
         <p className="hero__subtitle">
-          Espresso desde <Price value="$3.00" anchor /> — tu trailer de café más
-          cercano, listo en minutos.
+          Espresso from <Price value="$3.00" anchor /> — your nearest coffee
+          trailer, ready in minutes.
         </p>
 
         <div className="hero__actions">
-          <Button variant="primary">Ver menú y precios</Button>
-          <Button variant="text">¿Dónde estamos hoy?</Button>
+          <a className="btn btn--primary" href="#menu">
+            See menu &amp; prices
+          </a>
+          <a className="btn btn--text" href="#location">
+            Where are we today?
+          </a>
         </div>
       </div>
     </section>
