@@ -8,7 +8,7 @@ function Row({ item, size = "medium" }: { item: MenuItem; size?: "large" | "medi
     <div className={`menu-row menu-row--${size}`}>
       <span className="menu-row__name">
         {item.name}
-        {item.anchor && <span className="menu-row__tag">tu café de siempre</span>}
+        {item.anchor && <span className="menu-row__tag">your everyday coffee</span>}
       </span>
       <Price value={item.price} anchor={item.anchor} />
     </div>
