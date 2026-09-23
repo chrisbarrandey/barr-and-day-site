@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     description: "Café de verdad, al precio de todos los días.",
     url: "https://www.barranddaycoffee.com",
     siteName: "Barr & Day Coffee Co.",
-    locale: "es_US",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
@@ -53,7 +53,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body>
         <script
           type="application/ld+json"
