@@ -27,11 +27,24 @@ const jsonLd = {
   name: "Barr & Day Coffee Co.",
   url: "https://www.barranddaycoffee.com",
   image: "https://www.barranddaycoffee.com/icon.svg",
-  sameAs: ["https://www.instagram.com/barranddaycoffee"],
-  servesCuisine: "Coffee",
-  priceRange: "$",
+  telephone: "+1-915-977-2655",
   email: "chris@barranddaycoffee.com",
-  // TODO: agregar address (PostalAddress) y telephone reales cuando estén confirmados
+  priceRange: "$",
+  servesCuisine: "Coffee",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "13671 Eastlake Blvd",
+    addressLocality: "Horizon City",
+    addressRegion: "TX",
+    postalCode: "79928",
+    addressCountry: "US",
+  },
+  areaServed: "El Paso, TX",
+  sameAs: [
+    "https://www.instagram.com/barranddaycoffee",
+    "https://www.facebook.com/barranddaycoffee",
+    "https://www.tiktok.com/@barranddaycoffee",
+  ],
 };
 
 export default function RootLayout({
