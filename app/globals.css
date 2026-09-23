@@ -243,3 +243,11 @@ button {
   font-size: 13px;
   color: rgba(11, 19, 51, 0.7);
 }
+
+/* Contraste de precios dentro del menú (fondo claro) */
+.menu .price {
+  color: var(--color-navy-deep);
+}
+.menu .price--anchor {
+  color: #8c6220; /* dorado oscurecido para buen contraste sobre --color-paper */
+}
