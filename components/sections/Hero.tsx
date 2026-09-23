@@ -31,10 +31,10 @@ export function Hero({ isOpenNow, opensAt, opensLabel, locationLabel }: HeroProp
 
         <div className="hero__actions">
           <a className="btn btn--primary" href="#menu">
-            See menu &amp; prices
+            See the menu
           </a>
           <a className="btn btn--text" href="#location">
-            Where are we today?
+            ¿Dónde andamos hoy?
           </a>
         </div>
       </div>
