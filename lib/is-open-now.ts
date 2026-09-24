@@ -2,13 +2,13 @@ type DaySchedule = { open: string; close: string } | null;
 
 // 0 = domingo ... 6 = sábado
 const SCHEDULE: Record<number, DaySchedule> = {
-  0: { open: "09:00", close: "13:00" },
-  1: null,
-  2: null,
-  3: null,
-  4: { open: "08:00", close: "14:00" },
-  5: { open: "08:00", close: "14:00" },
-  6: { open: "09:00", close: "13:00" },
+  0: { open: "09:00", close: "14:00" }, // domingo
+  1: null, // lunes
+  2: null, // martes
+  3: { open: "08:00", close: "13:00" }, // miércoles
+  4: { open: "08:00", close: "13:00" }, // jueves
+  5: { open: "08:00", close: "13:00" }, // viernes
+  6: { open: "09:00", close: "14:00" }, // sábado
 };
 
 // Horizon City / El Paso, TX está en horario de Montaña, no Central.
