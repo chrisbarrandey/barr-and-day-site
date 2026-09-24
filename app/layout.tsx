@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "../styles/tokens.css";
 import "./globals.css";
 import { Header } from "../components/layout/Header";
+import { Footer } from "../components/layout/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.barranddaycoffee.com"),
@@ -62,6 +63,7 @@ export default function RootLayout({
         />
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
