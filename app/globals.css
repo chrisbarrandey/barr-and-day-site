@@ -461,3 +461,17 @@ button {
   color: rgba(255, 255, 255, 0.45);
   text-align: center;
 }
+
+/* Iconos de redes sociales en el footer */
+.site-footer__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.site-footer__social svg {
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+.site-footer__social:hover svg {
+  opacity: 1;
+}
