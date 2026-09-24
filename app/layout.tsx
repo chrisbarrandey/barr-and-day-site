@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import "../styles/tokens.css";
 import "./globals.css";
+import { Header } from "../components/layout/Header";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.barranddaycoffee.com"),
   title: "Barr & Day Coffee Co.",
-  description: "Café de verdad, al precio de todos los días.",
+  description: "Real coffee, at an everyday price. El Paso's coffee trailer.",
   openGraph: {
     title: "Barr & Day Coffee Co.",
-    description: "Café de verdad, al precio de todos los días.",
+    description: "Real coffee, at an everyday price. El Paso's coffee trailer.",
     url: "https://www.barranddaycoffee.com",
     siteName: "Barr & Day Coffee Co.",
     locale: "en_US",
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Barr & Day Coffee Co.",
-    description: "Café de verdad, al precio de todos los días.",
+    description: "Real coffee, at an everyday price. El Paso's coffee trailer.",
   },
 };
 
@@ -59,6 +60,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <Header />
         {children}
       </body>
     </html>
