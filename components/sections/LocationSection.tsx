@@ -6,9 +6,10 @@ type LocationSectionProps = {
   opensLabel?: string;
 };
 
-const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=" +
-  encodeURIComponent(location.address + " (Darrington Rd & Eastlake)");
+// Coordenadas exactas confirmadas por GPS (esquina Darrington Rd & Eastlake,
+// junto a Albertsons). Se usan directo en vez del número de calle aproximado,
+// para que "Get directions" siempre caiga en el punto real.
+const MAPS_URL = "https://www.google.com/maps/search/?api=1&query=31.701778,-106.212667";
 
 export function LocationSection({ isOpen, opensAt, opensLabel }: LocationSectionProps) {
   return (
