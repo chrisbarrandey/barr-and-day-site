@@ -35,11 +35,16 @@ const jsonLd = {
   servesCuisine: "Coffee",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "13671 Eastlake Blvd",
+    streetAddress: "Darrington Rd & Eastlake Blvd",
     addressLocality: "Horizon City",
     addressRegion: "TX",
     postalCode: "79928",
     addressCountry: "US",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 31.701778,
+    longitude: -106.212667,
   },
   areaServed: "El Paso, TX",
   sameAs: [
