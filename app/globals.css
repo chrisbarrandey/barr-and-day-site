@@ -475,3 +475,34 @@ button {
 .site-footer__social:hover svg {
   opacity: 1;
 }
+
+/* ---------- Links como botones + botón de pedido ---------- */
+a.btn {
+  text-decoration: none;
+}
+a.btn.btn--text {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site-header__cta {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+  flex-direction: row;
+  white-space: nowrap;
+}
+.site-header {
+  gap: var(--space-2);
+}
+@media (max-width: 480px) {
+  .site-header__cta {
+    padding: 0 12px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 360px) {
+  .site-header__nav {
+    display: none;
+  }
+}
