@@ -1,3 +1,5 @@
+import { ORDER_URL } from "../../lib/links";
+
 export function Header() {
   return (
     <header className="site-header">
@@ -15,6 +17,14 @@ export function Header() {
         <a href="#location">Location</a>
         <a href="#events">Events</a>
       </nav>
+      <a
+        className="btn btn--primary site-header__cta"
+        href={ORDER_URL}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Order online
+      </a>
     </header>
   );
 }
