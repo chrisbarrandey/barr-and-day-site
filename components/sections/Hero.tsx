@@ -1,4 +1,5 @@
 import { Price } from "../ui/Price";
+import { ORDER_URL } from "../../lib/links";
 
 type HeroProps = {
   isOpenNow: boolean;
@@ -30,7 +31,15 @@ export function Hero({ isOpenNow, opensAt, opensLabel, locationLabel }: HeroProp
         </p>
 
         <div className="hero__actions">
-          <a className="btn btn--primary" href="#menu">
+          <a
+            className="btn btn--primary"
+            href={ORDER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Order online
+          </a>
+          <a className="btn btn--secondary" href="#menu">
             See the menu
           </a>
           <a className="btn btn--text" href="#location">
