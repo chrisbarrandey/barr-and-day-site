@@ -1,7 +1,7 @@
 import { Price } from "../ui/Price";
 import menu from "../../content/menu.json";
 
-type MenuItem = { name: string; price: string; anchor?: boolean };
+type MenuItem = { name: string; price: string; anchor?: boolean; note?: string };
 
 function Row({ item, size = "medium" }: { item: MenuItem; size?: "large" | "medium" | "small" }) {
   return (
@@ -9,6 +9,7 @@ function Row({ item, size = "medium" }: { item: MenuItem; size?: "large" | "medi
       <span className="menu-row__name">
         {item.name}
         {item.anchor && <span className="menu-row__tag">your everyday coffee</span>}
+        {item.note && <span className="menu-row__note">{item.note}</span>}
       </span>
       <Price value={item.price} anchor={item.anchor} />
     </div>
@@ -44,6 +45,13 @@ export function MenuSection() {
             <h2 className="menu__label">Chocolate</h2>
             <div className="menu__list menu__list--medium">
               {(menu.chocolate as MenuItem[]).map((item) => (
+                <Row key={item.name} item={item} size="medium" />
+              ))}
+            </div>
+
+            <h2 className="menu__label menu__label--spaced">Pastries</h2>
+            <div className="menu__list menu__list--medium">
+              {(menu.pastries as MenuItem[]).map((item) => (
                 <Row key={item.name} item={item} size="medium" />
               ))}
             </div>
