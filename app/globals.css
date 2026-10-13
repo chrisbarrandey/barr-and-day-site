@@ -506,3 +506,18 @@ a.btn.btn--text {
     display: none;
   }
 }
+
+/* Pastries + notas de producto en el menú */
+.menu__label--spaced {
+  margin-top: var(--space-4);
+}
+.menu-row__note {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: rgba(11, 19, 51, 0.6);
+  margin-top: 3px;
+  max-width: 30ch;
+}
