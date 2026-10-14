@@ -17,6 +17,9 @@ function Row({ item, size = "medium" }: { item: MenuItem; size?: "large" | "medi
 }
 
 export function MenuSection() {
+  const seasonal = (menu.seasonal ?? []) as MenuItem[];
+  const hasSeasonal = seasonal.length > 0;
+
   return (
     <section className="menu" id="menu">
       <div className="menu__inner">
@@ -27,6 +30,17 @@ export function MenuSection() {
               <Row key={item.name} item={item} size="large" />
             ))}
           </div>
+
+          {hasSeasonal && (
+            <>
+              <h2 className="menu__label menu__label--spaced">Seasonal</h2>
+              <div className="menu__list menu__list--medium">
+                {seasonal.map((item) => (
+                  <Row key={item.name} item={item} size="medium" />
+                ))}
+              </div>
+            </>
+          )}
         </div>
 
         <div className="menu__divider" />
