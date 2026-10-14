@@ -18,6 +18,17 @@
       "price": "$5.75"
     }
   ],
+  "seasonal": [
+    {
+      "name": "Iced Pumpkin Cheesecake Latte",
+      "price": "$5.75",
+      "note": "Espresso, pumpkin and milk with cheesecake cold foam"
+    },
+    {
+      "name": "Hot Pumpkin Cheesecake Latte",
+      "price": "$5.25"
+    }
+  ],
   "lattesAndMore": [
     {
       "name": "Latte",
