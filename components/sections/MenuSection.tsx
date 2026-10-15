@@ -1,7 +1,14 @@
 import { Price } from "../ui/Price";
 import menu from "../../content/menu.json";
 
-type MenuItem = { name: string; price: string; anchor?: boolean; note?: string };
+type Variant = { label: string; price: string };
+type MenuItem = {
+  name: string;
+  price?: string;
+  prices?: Variant[];
+  anchor?: boolean;
+  note?: string;
+};
 
 function Row({ item, size = "medium" }: { item: MenuItem; size?: "large" | "medium" | "small" }) {
   return (
@@ -11,7 +18,18 @@ function Row({ item, size = "medium" }: { item: MenuItem; size?: "large" | "medi
         {item.anchor && <span className="menu-row__tag">your everyday coffee</span>}
         {item.note && <span className="menu-row__note">{item.note}</span>}
       </span>
-      <Price value={item.price} anchor={item.anchor} />
+      {item.prices ? (
+        <span className="menu-row__variants">
+          {item.prices.map((v) => (
+            <span className="menu-row__variant" key={v.label}>
+              <span className="menu-row__variant-label">{v.label}</span>
+              <Price value={v.price} />
+            </span>
+          ))}
+        </span>
+      ) : (
+        <Price value={item.price ?? ""} anchor={item.anchor} />
+      )}
     </div>
   );
 }
@@ -78,6 +96,8 @@ export function MenuSection() {
             </div>
           </div>
         </div>
+
+        <p className="menu__footnote">Hot lattes are 12 oz · Iced drinks are 16 oz.</p>
       </div>
     </section>
   );
